@@ -23,17 +23,22 @@ export default class Select {
     }
   
     selectValue(value) {
+      // get selected option value
       const newSelectedOption = this.options.find(option => {
         return option.value === value
       })
+      // unselect the current selected option
       const prevSelectedOption = this.selectedOption
       prevSelectedOption.selected = false
       prevSelectedOption.element.selected = false
   
+      // select the new option
       newSelectedOption.selected = true
       newSelectedOption.element.selected = true
-  
+      
+      // chnage the label into option value
       this.labelElement.innerText = newSelectedOption.label
+      // remove the selected class from the specific option that was selected previously
       this.optionsCustomElement
         .querySelector(`[data-value="${prevSelectedOption.value}"]`)
         .classList.remove("selected")
@@ -47,6 +52,7 @@ export default class Select {
   
   function setupCustomElement(select) {
     select.customElement.classList.add("custom-select-container")
+    // to make the custom element tab selectable
     select.customElement.tabIndex = 0
   
     select.labelElement.classList.add("custom-select-value")
@@ -76,6 +82,7 @@ export default class Select {
       select.optionsCustomElement.classList.remove("show")
     })
   
+    // run with time lapse of 500ms
     let debounceTimeout
     let searchTerm = ""
     select.customElement.addEventListener("keydown", e => {
@@ -102,6 +109,7 @@ export default class Select {
           select.optionsCustomElement.classList.remove("show")
           break
         default: {
+          // custom search
           clearTimeout(debounceTimeout)
           searchTerm += e.key
           debounceTimeout = setTimeout(() => {
@@ -120,7 +128,8 @@ export default class Select {
   }
   
   function getFormattedOptions(optionElements) {
-    return [...optionElements].map(optionElement => {
+    // converting to array to use map
+    return [...optionElements].map(optionElement => { 
       return {
         value: optionElement.value,
         label: optionElement.label,
