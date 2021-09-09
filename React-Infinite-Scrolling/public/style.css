@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+#root {
+    margin: 20px auto;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#root input {
+    width: 300px;
+    height: 30px;
+    font-size: 24px;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px 5px;
+}
+
+#root input:hover,
+#root input:focus {
+    border: 2px solid cornflowerblue;
+}
+
+h1, h3, h4{
+    font-family: sans-serif;
+    font-weight: 400;
+    padding: 10px;
+}
+
+h3 span {
+    color: red;
+    font-weight: bold;
+}
+
+#root div {
+    padding: 5px;
+    font-size: 20px;
+}
