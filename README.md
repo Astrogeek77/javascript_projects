@@ -6,3 +6,4 @@ Some Projects to view
 | :-: | :----------------------------: | :-------: |
 | 01  |       [tic tac toe](https://github.com/Astrogeek77/javascript_projects/tree/main/tic%20tac%20toe)       | [demo](https://astrosite77.me/javascript_projects/tic%20tac%20toe/)
 | 02  |       [custom-select-dropdown](https://github.com/Astrogeek77/javascript_projects/tree/main/custom-select-dropdown)       | [demo](https://astrosite77.me/javascript_projects/custom-select-dropdown/)
+| 03  |       [React-Infinite-Scrolling](https://github.com/Astrogeek77/javascript_projects/tree/main/React-Infinite-Scrolling)       | [demo](https://react-infinite-scrolling-7xs1twt63-astrogeek77.vercel.app/)
