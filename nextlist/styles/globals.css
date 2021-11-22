@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 
 body {
-  background: #f2f2f2;
+  background-color: #f2f2f2;
+  background-image: url("https://www.transparenttextures.com/patterns/gradient-squares.png");
   color: #333;
   font-family: "Nunito";
 }
@@ -18,12 +19,12 @@ nav {
   padding: 10px 0;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
   border-bottom: 2px solid #ddd;
 }
 nav a {
-  margin-left: 15px;
-  font-size: 20px;
+  margin-left: 18px;
+  font-size: 22px;
   transition: 0.5s
 }
 nav a:hover {
